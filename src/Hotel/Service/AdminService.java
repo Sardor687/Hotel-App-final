@@ -152,6 +152,7 @@ public class AdminService {
             int m = AuthService.scanner.nextInt();
             m--;
             System.out.println(Database.historyBooking.get(m).getId());
+            Database.historyBooking.remove(m);
             System.out.println("successfully!");
         }
     }

@@ -322,6 +322,8 @@ public class UserService {
             }
             Booking booking1 = Database.historyBooking.get(r - 1);
             if (booking1.getUser().equals(AuthService.Currentuser)) {
+                Database.historyBooking.remove(booking1);
+
                 long between = ChronoUnit.DAYS.between(booking1.getFrom_Date(), booking1.getTo_Date());
                 double summa = (between * booking1.getRoom().getPrice());
                 double res = (AuthService.Currentuser.getKard().getBalance() + summa);
