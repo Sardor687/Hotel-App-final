@@ -6,7 +6,7 @@ import java.util.UUID;
 
 public class User {
     private final String Id = UUID.randomUUID().toString();
-    private String name
+    private String name;
     private String password;
     private String tel_number;
     private Kard Kard;

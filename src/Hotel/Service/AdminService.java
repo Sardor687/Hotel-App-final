@@ -291,13 +291,12 @@ public class AdminService {
         } else {
             System.out.println("All Bookings:");
             for (Booking booking : Database.historyBooking) {
-                System.out.println(booking); // Assuming Booking class has a meaningful toString() method
+                System.out.println(booking);
             }
         }
     }
 
     private static void showBookingsByUser() {
-        // Implement logic to get user input and filter bookings by user
         System.out.println("Enter User Name:");
         String userName = AuthService.strScanner.nextLine();
 
@@ -313,7 +312,7 @@ public class AdminService {
         } else {
             System.out.println("Bookings by User: " + userName);
             for (Booking booking : userBookings) {
-                System.out.println(booking);
+                System.out.println(booking.getId());
             }
         }
     }
