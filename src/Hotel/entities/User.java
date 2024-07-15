@@ -1,6 +1,6 @@
 package Hotel.entities;
 
-import Hotel.Role.Role;
+import Hotel.entities.Role.Role;
 
 import java.util.UUID;
 
